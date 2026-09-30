@@ -1,93 +1,144 @@
-body {
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-        background-color: var(--bg-color);
-        color: var(--text-main);
-        line-height: 1.6;
-        margin: 0;
-        padding: 20px;
-    }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Unblock Puzzle</title>
+    <style>
+        :root {
+            --bg-color: #2b1d0c;
+            --container-bg: #3d2712;
+            --text-main: #f4e8d8;
+            --text-muted: #c4b097;
+            --accent-color: #d4973f;
+            --border-color: #5c3d1b;
+        }
 
-    .container {
-        max-width: 800px;
-        margin: 40px auto;
-        background: var(--container-bg);
-        padding: 40px;
-        border-radius: 16px;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-        border: 2px solid var(--border-color);
-    }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.7;
+            margin: 0;
+            padding: 20px;
+        }
 
-    h1 {
-        color: var(--accent-color);
-        font-size: 2.2rem;
-        margin-bottom: 10px;
-        text-align: center;
-    }
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background: var(--container-bg);
+            padding: 40px 50px;
+            border-radius: 16px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6), inset 0 2px 4px rgba(255, 255, 255, 0.05);
+            border: 2px solid var(--border-color);
+        }
 
-    .effective-date {
-        text-align: center;
-        color: var(--text-muted);
-        font-size: 0.9rem;
-        margin-bottom: 30px;
-    }
+        h1 {
+            color: var(--accent-color);
+            font-size: 2.4rem;
+            margin-bottom: 8px;
+            text-align: center;
+            letter-spacing: 0.5px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
 
-    h2 {
-        color: var(--accent-color);
-        font-size: 1.3rem;
-        margin-top: 30px;
-        border-bottom: 1px solid var(--border-color);
-        padding-bottom: 6px;
-    }
+        .subtitle {
+            text-align: center;
+            color: var(--text-main);
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+            font-weight: 500;
+        }
 
-    p, li {
-        color: var(--text-main);
-        font-size: 1rem;
-    }
+        .effective-date {
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-bottom: 35px;
+        }
 
-    ul {
-        padding-left: 20px;
-    }
+        h2 {
+            color: var(--accent-color);
+            font-size: 1.25rem;
+            margin-top: 35px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 8px;
+            letter-spacing: 0.3px;
+        }
 
-    li {
-        margin-bottom: 8px;
-    }
+        p, li {
+            color: var(--text-main);
+            font-size: 1rem;
+        }
 
-    .footer {
-        text-align: center;
-        margin-top: 40px;
-        font-size: 0.85rem;
-        color: var(--text-muted);
-        border-top: 1px solid var(--border-color);
-        padding-top: 20px;
-    }
-</style>
+        ul {
+            padding-left: 22px;
+            margin-top: 8px;
+        }
 
+        li {
+            margin-bottom: 10px;
+        }
 
-    <p>Welcome to <strong>Unblock Puzzle</strong>. We respect your privacy and are committed to protecting any information you may share while playing our game. This Privacy Policy outlines how we handle your data when you play online or offline.</p>
+        li strong {
+            color: var(--accent-color);
+        }
 
-    <h2>1. Information We Collect</h2>
-    <p>Our game is designed with privacy in mind:</p>
-    <ul>
-        <li><strong>Local Game Progress:</strong> Your level progression, puzzle scores, record stats, and daily streaks are stored locally on your device using embedded key-value storage.</li>
-        <li><strong>Offline Play:</strong> Unblock Me functions entirely offline. We do not require account creation, personal registration, or sensitive credentials to enjoy the gameplay.</li>
-    </ul>
+        .footer {
+            text-align: center;
+            margin-top: 45px;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            border-top: 1px solid var(--border-color);
+            padding-top: 20px;
+        }
 
-    <h2>2. Data Synchronization</h2>
-    <p>When connected to the internet, game state updates and progression metrics may sync seamlessly to ensure your records remain updated across sessions. No personal identification data is harvested during this background synchronization.</p>
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+                margin: 20px 10px;
+            }
+            h1 {
+                font-size: 1.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
 
-    <h2>3. Third-Party Services</h2>
-    <p>We do not sell, trade, or rent your personal information to third parties. Any analytics or diagnostic libraries embedded for crash reporting operate anonymously to maintain performance stability.</p>
+    <div class="container">
+        <h1>Unblock Puzzle</h1>
+        <div class="subtitle">Privacy Policy</div>
+        <div class="effective-date">Effective Date: September 2026</div>
 
-    <h2>4. Children’s Privacy</h2>
-    <p>Unblock Me is suitable for players of all ages (kids and adults). We do not knowingly collect personally identifiable information from children under the age of 13.</p>
+        <p>Welcome to Unblock Puzzle. We respect your privacy and are committed to protecting any information you may share while playing our game. This Privacy Policy outlines how we handle your data when you play online or offline.</p>
 
-    <h2>5. Changes to This Privacy Policy</h2>
-    <p>We may update our Privacy Policy from time to time. Any modifications will be posted directly on this page with an updated effective date.</p>
+        <h2>1. Information We Collect</h2>
+        <p>Our game is designed with privacy in mind:</p>
+        <ul>
+            <li><strong>Local Game Progress:</strong> Your level progression, puzzle scores, record stats, and daily streaks are stored locally on your device using embedded key-value storage.</li>
+            <li><strong>Offline Play:</strong> Unblock Me functions entirely offline. We do not require account creation, personal registration, or sensitive credentials to enjoy the gameplay.</li>
+        </ul>
 
-    <h2>6. Contact Us</h2>
-    <p>If you have any questions or concerns regarding this Privacy Policy, please reach out via our support channels within the app or repository.</p>
+        <h2>2. Data Synchronization</h2>
+        <p>When connected to the internet, game state updates and progression metrics may sync seamlessly to ensure your records remain updated across sessions. No personal identification data is harvested during this background synchronization.</p>
 
-    <div class="footer">
-        &copy; 2026 Unblock Puzzle. All rights reserved.
+        <h2>3. Third-Party Services</h2>
+        <p>We do not sell, trade, or rent your personal information to third parties. Any analytics or diagnostic libraries embedded for crash reporting operate anonymously to maintain performance stability.</p>
+
+        <h2>4. Children’s Privacy</h2>
+        <p>Unblock Me is suitable for players of all ages (kids and adults). We do not knowingly collect personally identifiable information from children under the age of 13.</p>
+
+        <h2>5. Changes to This Privacy Policy</h2>
+        <p>We may update our Privacy Policy from time to time. Any modifications will be posted directly on this page with an updated effective date.</p>
+
+        <h2>6. Contact Us</h2>
+        <p>If you have any questions or concerns regarding this Privacy Policy, please reach out via our support channels within the app or repository.</p>
+
+        <div class="footer">
+            &copy; 2026 Unblock Puzzle. All rights reserved.
+        </div>
     </div>
-</div>
+
+</body>
+</html>
